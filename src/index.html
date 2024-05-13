@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>My homework number 12</title>
-    <link rel="stylesheet" href="./css/reset.css" />
+    <title>MY HOME WORK 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <span class="loader"></span>
-    <a href="#" class="scrollbutton"> &uarr;</a>
+    <form class="form js-form">
+      <label>
+        <input
+          type="text"
+          name="text"
+          required
+          placeholder="Search images..."
+        />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+
+    <ul class="gallery js-gallery"></ul>
+    <div class="box-load-more">
+      <span class="loader is-active"></span>
+      <button class="btn-load-more is-active" type="button">Load more</button>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
